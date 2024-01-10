@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <title>Tourweb - HTML Template </title>
+</head>
+<body>
+<header class="header">
+    <div class="section-container">
+        <img class="logo" src="assets/images/logo.png" alt="logo">
+    </div>
+</header>
+<div class="main">
+    <div class="section-tour">
+        <div class="section-container">
+            <h2 class="section-heading">List Tour</h2>
+            <div class="section-row">
+                <div class="tour-item">
+                    <div class="tourn-inner">
+                        <figure class="tour-thumb">
+                            <img src="assets/images/tour1.jpg" alt="img" onclick="openModal();currentSlide(1)">
+                        </figure>
+                        <h3 class="tour-title">Tour 1</h3>
+                        <div class="tour-desc">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit aenean ut habitant, condimentum
+                            sollicitudin sociis consequat odio ante nascetur inceptos interdum urna eleifend
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="tourn-inner">
+                        <figure class="tour-thumb">
+                            <img src="assets/images/tour2.jpg" alt="img" onclick="openModal();currentSlide(2)">
+                        </figure>
+                        <h3 class="tour-title">Tour 2</h3>
+                        <div class="tour-desc">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit aenean ut habitant, condimentum
+                            sollicitudin sociis consequat odio ante nascetur inceptos interdum urna eleifend
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="tourn-inner">
+                        <figure class="tour-thumb">
+                            <img src="assets/images/tour3.jpg" alt="img" onclick="openModal();currentSlide(3)">
+                        </figure>
+                        <h3 class="tour-title">Tour 3</h3>
+                        <div class="tour-desc">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit aenean ut habitant, condimentum
+                            sollicitudin sociis consequat odio ante nascetur inceptos interdum urna eleifend
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="tourn-inner">
+                        <figure class="tour-thumb">
+                            <img src="assets/images/tour4.jpg" alt="img" onclick="openModal();currentSlide(4)">
+                        </figure>
+                        <h3 class="tour-title">Tour 4</h3>
+                        <div class="tour-desc">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit aenean ut habitant, condimentum
+                            sollicitudin sociis consequat odio ante nascetur inceptos interdum urna eleifend
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="tourn-inner">
+                        <figure class="tour-thumb">
+                            <img src="assets/images/tour5.jpg" alt="img" onclick="openModal();currentSlide(5)">
+                        </figure>
+                        <h3 class="tour-title">Tour 5</h3>
+                        <div class="tour-desc">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit aenean ut habitant, condimentum
+                            sollicitudin sociis consequat odio ante nascetur inceptos interdum urna eleifend
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-contact">
+        <form class="contact-form">
+            <div class="section-container">
+                <h2 class="section-heading">
+                    Contact Us
+                </h2>
+                <div class="section-row">
+                    <div class="contact-name contact-input section-col">
+                        <label>Name<span class="required">*</span></label>
+                        <input title="name" required="required" name="name" type="text">
+                    </div>
+                    <div class="contact-email contact-input section-col">
+                        <label>Email <span class="required">*</span></label>
+                        <input title="email" required="required" name="email" type="email">
+                    </div>
+                    <div class="contact-tour contact-input section-col">
+                        <label>Date<span class="required">*</span></label>
+                        <select title="tour" required="required" name="tour">
+                            <option value="">Select a tour</option>
+                            <option value="tour1">Tour 1</option>
+                            <option value="tour2">Tour 2</option>
+                            <option value="tour3">Tour 3</option>
+                            <option value="tour4">Tour 4</option>
+                            <option value="tour5">Tour 5</option>
+                        </select>
+                    </div>
+                    <div class="contact-date contact-input section-col">
+                        <label>Date<span class="required">*</span></label>
+                        <input title="date" required="required" name="date" type="text">
+                    </div>
+                    <div class="contact-submit contact-input section-col">
+                        <button name="submit" class="submit" type="submit" value="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="assets/images/tour1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="assets/images/tour2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="assets/images/tour3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="assets/images/tour4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="assets/images/tour5.jpg" style="width:100%">
+            </div>
+
+            <div class="column">
+                <img class="demo cursor" src="assets/images/tour1.jpg" style="width:100%" onclick="currentSlide(1)"
+                     alt="img">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="assets/images/tour2.jpg" style="width:100%" onclick="currentSlide(2)"
+                     alt="img">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="assets/images/tour3.jpg" style="width:100%" onclick="currentSlide(3)"
+                     alt="img">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="assets/images/tour4.jpg" style="width:100%" onclick="currentSlide(4)"
+                     alt="img">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="assets/images/tour5.jpg" style="width:100%" onclick="currentSlide(5)"
+                     alt="Northern Lights">
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="section-container">
+        Copyright ©Tour Web 2024.
+    </div>
+</footer>
+<script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    function openModal() {
+        document.getElementById("myModal").classList.add('open');
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").classList.remove('open');
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+</body>
+</html>

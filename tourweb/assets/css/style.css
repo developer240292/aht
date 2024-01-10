@@ -1,0 +1,348 @@
+/* ==========================================================================
+  1.0 RESET BROWSER
+========================================================================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+    color: #7e7e7e;
+    overflow-x: hidden;
+}
+label {
+    font-weight: 500;
+    color: #222222;
+}
+a {
+    color: #222222;
+    text-decoration: none;
+}
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+    color: #faaf55;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul, ol {
+    margin: 0;
+    padding-left: 17px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    padding-left: 17px;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    color: #222222;
+    margin-top: 0;
+    font-weight: 700;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+p {
+    margin-bottom: 20px;
+}
+blockquote, q {
+    display: inline-block;
+    padding: 10px 22px 12px 22px;
+    border-left: 4px solid #faaf55;
+    color: #222222;
+    font-size: 18px;
+    line-height: 30px;
+}
+/* ==========================================================================
+  1.1 FORM THEME
+============================================================================ */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+textarea,
+select {
+    border: 1px solid #f9f9f9;
+    border-radius: 0;
+    padding: 0 26px;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+}
+textarea {
+    line-height: 28px;
+    padding: 15px 26px;
+    height: auto;
+    width: 100%;
+}
+button,
+input[type="submit"] {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    padding: 0 30px;
+    background: #222222;
+    border: none;
+    border-radius: 0;
+}
+button:focus,
+input[type="submit"]:focus {
+    color: #ffffff;
+    background: #faaf55;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+input[type="submit"]:focus,
+button:focus,
+select:focus {
+    outline: none;
+    border-color: #faaf55 !important;
+}
+:focus {
+    outline: none;
+}
+::-webkit-input-placeholder {
+    text-align: inherit;
+    color: inherit;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: inherit;
+    color: inherit;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: inherit;
+    color: inherit;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+:-ms-input-placeholder {
+    text-align: inherit;
+    color: inherit;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.return-message {
+    line-height: 20px;
+    padding: 10px 30px;
+    margin-top: 15px;
+}
+/* ==========================================================================
+  1.2 TABLE THEME
+============================================================================ */
+table {
+    border: 1px solid #ebebeb;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+table thead {
+    background-color: #f8f8f8;
+}
+th, td {
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    font-weight: normal;
+}
+table tr th:last-child,
+table tr td:last-child {
+    border-right: 0;
+}
+table tr:last-child td, table tr:last-child th {
+    border-bottom: none;
+}
+/**/
+.section-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.section-row::before,
+.section-row::after {
+    content: '';
+    display: table;
+}
+.section-row::after {
+    clear: both;
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+.header .logo {
+    width: 200px;
+    margin: 0 auto;
+}
+.section-contact {
+    padding: 70px 0 40px;
+}
+.section-tour {
+    padding: 70px 0 40px;
+    background-color: #f8f8f8;
+}
+.footer {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+/**/
+.contact-form label {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    text-align: left;
+}
+.contact-input {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contact-input select,
+.contact-input input {
+    border-radius: 0;
+    width: 100%;
+}
+.contact-input textarea {
+    border-radius: 0;
+}
+/**/
+.tour-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 33.3333333%;
+    float: left;
+    margin-bottom: 30px;
+}
+.tour-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/**/
+.modal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    -webkit-transform: scale(0.2);
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+}
+.modal.open {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+.mySlides {
+    display: none;
+}
+.cursor {
+    cursor: pointer;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.column {
+    float: left;
+    width: 20%;
+}
